@@ -15,7 +15,7 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(RedRight, HIGH); // high is on
+  digitalWrite(RedRight, HIGH);
   digitalWrite(RedLeft, HIGH);
   delay(500);
   digitalWrite(RedRight, LOW);
@@ -42,7 +42,7 @@ void loop() {
   digitalWrite(RedRight, LOW);
   digitalWrite(RedLeft, LOW);
   delay(200);
-  digitalWrite(RedRight, LOW); //low is off
+  digitalWrite(RedRight, LOW);
   digitalWrite(RedLeft, LOW);
   delay(500);
   Bean.sleep(750);
