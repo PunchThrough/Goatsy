@@ -1,16 +1,8 @@
-int BlueRight = 0,
-    GreenRight = 1, //broken ##needs re-solder
-    RedRight = 2,
-    BlueLeft = 3,
-    GreenLeft = 4,
+int RedRight = 0,
     RedLeft = 5;
 
 void setup() {
-  pinMode(BlueRight, OUTPUT);
-  pinMode(GreenRight, OUTPUT); //broken
   pinMode(RedRight, OUTPUT);
-  pinMode(BlueLeft, OUTPUT);
-  pinMode(GreenLeft, OUTPUT);
   pinMode(RedLeft, OUTPUT);
 }
 
@@ -29,10 +21,10 @@ void loop() {
   delay(200);
   digitalWrite(RedRight, HIGH);
   digitalWrite(RedLeft, HIGH);
-  delay(100);
+  delay(150);
   digitalWrite(RedRight, LOW);
   digitalWrite(RedLeft, LOW);
-  delay(200);
+  delay(100);
   digitalWrite(RedRight, HIGH);
   digitalWrite(RedLeft, HIGH);
   delay(750);
@@ -41,9 +33,17 @@ void loop() {
   delay(100);
   digitalWrite(RedRight, LOW);
   digitalWrite(RedLeft, LOW);
-  delay(200);
+  delay(50);
+  digitalWrite(RedRight, HIGH);
+  digitalWrite(RedLeft, HIGH);
+  delay(50);
   digitalWrite(RedRight, LOW);
   digitalWrite(RedLeft, LOW);
-  delay(500);
-  Bean.sleep(750);
+  delay(100);
+  digitalWrite(RedRight, HIGH);
+  digitalWrite(RedLeft, HIGH);
+  delay(100);
+  digitalWrite(RedRight, LOW);
+  digitalWrite(RedLeft, LOW);
+  Bean.sleep(7500);
 }
